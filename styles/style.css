@@ -3,4 +3,35 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    
+}
+.first-section{
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 200px; 
+    margin-left: 3em;
+    margin-top: 2em;
+}
+.title{
+    margin-bottom: 80px;
+}
+
+
+/* .half-width{
+    width: 50%;
+    margin-left: 120px;
+    margin-top: 80px;
+}  */
+.button{
+    background-color: #E02C6D;
+    color: white;
+    border: 0px;
+    padding: 10px 24px;
+    border-radius: 41px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button .fa-arrow-right{
+    padding-left: 8px;
 }
