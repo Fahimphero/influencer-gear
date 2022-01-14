@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 200px; 
-    margin-left: 3em;
+    margin-left: 200px;
     margin-top: 2em;
 }
 .title{
@@ -35,3 +35,78 @@ body{
 .button .fa-arrow-right{
     padding-left: 8px;
 }
+
+/*--------
+ popular section
+ ------------ */
+ .popular-section{
+     margin-top: 3em;
+ }
+ .popular-section h1{
+     text-align: center;
+ }
+ .instruments{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     margin-left: 90px;
+     margin-top: 3em;
+     grid-row-gap: 70px;
+     position: relative;
+ }
+ .instrument{
+     width: 313px;
+     box-shadow: 0px 0px 20px;
+     padding: 1em 1em;
+     border-radius: 5px;
+ }
+ .instrument .banner img{
+     width: 100%;
+ }
+ .money{
+     font-size: 2em;
+     margin: 6px 0px;
+ }
+ .fa-star{
+     color: goldenrod;
+ }
+ .blog, span{
+     color: #787885;
+ }
+ .see-more-button{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   color: turquoise;
+}
+.see-more-button .fa-arrow-right{
+    padding-left: 8px;
+}
+
+ /* footer section */
+
+ footer{
+     padding: 50px 0px;
+     color: whitesmoke;
+     background-color: #0A0826;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+ }
+ .last-section{
+     display: flex;
+     flex-direction: column;
+ }
+ .last-section p, h2{
+     margin-bottom: 0;
+     margin-top: 10px;
+     text-align: center;
+     
+ }
+ .social-icons{
+     margin: 0 auto;
+     padding-top: 17px;
+     width: 200px;
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
