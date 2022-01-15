@@ -10,7 +10,8 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 200px; 
-    margin-left: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 2em;
 }
 .title{
@@ -32,15 +33,20 @@ body{
     font-weight: 700;
     cursor: pointer;
 }
+.button:hover{
+    transform: scale(1.5);
+    transition: transform 2s;
+}
+
 .button .fa-arrow-right{
     padding-left: 8px;
 }
 
 /*--------
- popular section
+ Popular section Styles
  ------------ */
  .popular-section{
-     margin-top: 3em;
+     margin-top: 100px;
  }
  .popular-section h1{
      text-align: center;
@@ -48,7 +54,8 @@ body{
  .instruments{
      display: grid;
      grid-template-columns: repeat(3, 1fr);
-     margin-left: 90px;
+     margin-left: 100px;
+     
      margin-top: 3em;
      grid-row-gap: 70px;
      position: relative;
@@ -73,16 +80,46 @@ body{
      color: #787885;
  }
  .see-more-button{
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   color: turquoise;
+     margin-right: 100px;
+     font-size: 1em;
+     color: #E02C6D;
+    background-color: white;
+    border: 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: grab;
 }
 .see-more-button .fa-arrow-right{
     padding-left: 8px;
 }
 
- /* footer section */
+/*----- Bonus Section styles ------*/
+
+.reviews{
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px;
+    /* margin-top: 3em; */
+margin: 100px 150px;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+.review p{
+    display: flex;
+    justify-content: center;
+}
+ /*-------- Footer section styles------- */
 
  footer{
      padding: 50px 0px;
@@ -110,3 +147,70 @@ body{
      justify-content: space-evenly;
      
  }
+
+ /*-----------------
+  Media Query
+  ---------------- */
+
+  /* Mobile Devices */
+  @media only screen and (max-width:688px) {
+
+    .first-section, .popular-section, .reviews, .last-section{
+        width: 100%;
+    }
+    /* .first-section{
+   
+        display:flex;
+        flex-direction: column;
+    }
+     */
+     .header-image{
+         width: 100%;
+     }
+     .first-section{
+   
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px; 
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    .instruments{
+        display: flex;
+        flex-direction: column;
+        
+       margin-left: 0px;
+        margin-top: 3em;
+       
+    }
+    .instrument{
+        width: 240px;
+        box-shadow: 0px 0px 20px;
+        padding: 1em 1em;
+        border-radius: 5px;
+    }
+    .reviews{
+        margin-left: 0px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px;  
+        display: flex;
+        flex-direction: column;
+    }
+    .review{
+        /* padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        width: 100%;
+    }
+    .social-icons{
+        margin: 0 auto;
+        padding-top: 17px;
+        width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+}
