@@ -19,11 +19,6 @@ body{
 }
 
 
-/* .half-width{
-    width: 50%;
-    margin-left: 120px;
-    margin-top: 80px;
-}  */
 .button{
     background-color: #E02C6D;
     color: white;
@@ -99,10 +94,7 @@ body{
 .reviews{
     border-radius: 10px;
     box-shadow: 0px 0px 20px;
-    /* margin-top: 3em; */
-margin: 100px 150px;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
+    margin: 100px 150px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -133,7 +125,17 @@ margin: 100px 150px;
      display: flex;
      flex-direction: column;
  }
- .last-section p, h2{
+ .last-section p{
+     margin-bottom: 0;
+     margin-top: 10px;
+     text-align: center;
+     
+ }
+ .gadget-name{
+    margin-bottom: 0;
+    margin-top: 10px;
+ }
+ .align-center{
      margin-bottom: 0;
      margin-top: 10px;
      text-align: center;
@@ -179,7 +181,6 @@ margin: 100px 150px;
     .instruments{
         display: flex;
         flex-direction: column;
-        
        margin-left: 0px;
         margin-top: 3em;
        
@@ -272,9 +273,7 @@ margin: 100px 150px;
     .reviews{
         border-radius: 10px;
         box-shadow: 0px 0px 20px;
-       
-    margin: 50px 100px;
-      
+        margin: 50px 5px;
         display: flex;
         justify-content: space-evenly;
     }
